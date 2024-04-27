@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, ContactUs, Home, Landing, Profile } from "./pages";
+import { About, Community, Contact, Home, Landing, Profile } from "./pages";
 
 
 function App() {
   const routes = [
     { path: '/about', element: <About /> },
     { path: '/profile', element: <Profile /> },
-    { path: '/contact-us', element: <ContactUs /> },
+    { path: '/community', element: <Community /> },
+    { path: '/contact-us', element: <Contact /> },
   ]
 
   return (
