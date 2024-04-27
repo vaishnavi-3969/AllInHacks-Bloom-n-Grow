@@ -1,23 +1,28 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HandingFlowers } from '../assets/images';
+import { RotatingFlowers } from '../assets/images';
 
 const Landing = () => {
   const { loginWithPopup } = useAuth0();
 
   return (
-    <div >
+    <div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="bg-[#344E41] min-h-screen text-white flex flex-col justify-center items-center"
       >
-        <div className="max-w-3xl text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Welcome to Bloom &amp; Grow Community
+        <div className="max-w-3xl text-center justify-center">
+         <div className='flex items-center'>
+         <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Welcome to Bloom & Grow Community
           </h1>
+          <div className="w-[330px] flex justify-center mb-8">
+            <img src={RotatingFlowers} alt="Rotating flowers" className="max-w-full h-auto" />
+          </div>
+         </div>
           <p className="text-lg md:text-xl mb-8">
             Join our vibrant community of plant lovers, where you can connect, learn, and grow together.
           </p>
@@ -45,6 +50,12 @@ const Landing = () => {
               marketplace
             </button>{' '}
             for sustainable gardening products.
+          </p>
+          <p className="mt-8 text-sm text-gray-300">
+            Already a member?{' '}
+            <button onClick={() => loginWithPopup()} className="underline">
+              Log in here
+            </button>
           </p>
         </div>
       </motion.div>
