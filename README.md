@@ -4,8 +4,8 @@ Welcome to the Bloom N Grow documentation hub. Below you will find links to vari
 
 ## Documentation for Different Audiences
 
-- **Developer Guide**: Detailed instructions for developers who want to contribute to the project.
-- **User Guide**: Information for end-users on how to use the Bloom N Grow app.
-- **React App Guide**: The default React app README for those interested in React-specific details.
+- [**Developer Guide**](./README-DEV.md): Detailed instructions for developers who want to contribute to the project.
+- [**User Guide**](./README-USER.md): Information for end-users on how to use the Bloom N Grow app.
+- [**React App Guide**](./README-REACT.md): The default React app README for those interested in React-specific details.
 
 Please select the guide that best suits your needs.
