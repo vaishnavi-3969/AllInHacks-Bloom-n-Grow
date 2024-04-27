@@ -14,7 +14,12 @@ function App() {
           <Route path="/" element=<Landing /> exact />
           <Route path="/home" element=<Home /> exact />
           {routes.map((route, index) => (
-            <Route key={index} path={route.path} element={route.element} exact />
+            <Route
+              key={index}
+              path={route.path}
+              element={route.element}
+              exact
+            />
           ))}
         </Routes>
       </BrowserRouter>
