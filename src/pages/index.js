@@ -4,7 +4,7 @@ import About from "./About";
 import Profile from "./Profile";
 import Contact from "./Contact";
 import Community from "./Community";
-
+import Marketplace from "./Marketplace";
 
 
 
@@ -16,5 +16,6 @@ export {
     About,
     Profile,
     Contact,
-    Community
+    Community,
+    Marketplace
 }
