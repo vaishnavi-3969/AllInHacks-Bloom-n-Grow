@@ -1,4 +1,4 @@
-# Bloom N Grow - Developer Documentation
+# Bloom N Grow - Developer Documentation 🌿
 Welcome to the developer documentation for “Bloom N Grow” - an all-in-one gardening platform that empowers communities in Africa.
 
 ## Open Source Contribution
@@ -8,6 +8,7 @@ Welcome to the developer documentation for “Bloom N Grow” - an all-in-one ga
 - Git
 - Node.js (version X.X.X or higher)
 - npm (version X.X.X or higher)
+
 ## Setup
 1. Fork and clone the repository:
 ```git clone https://github.com/your-username/bloom-n-grow.git```
