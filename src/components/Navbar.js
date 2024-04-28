@@ -7,6 +7,7 @@ const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
   const [isCommunityMenuOpen, setCommunityMenuOpen] = useState(false);
   const [isResourcesMenuOpen, setResourcesMenuOpen] = useState(false);
+  const [isAboutMenuOpen, setAboutMenuOpen] = useState(false);
 
   const toggleCommunityMenu = () => {
     setCommunityMenuOpen(!isCommunityMenuOpen);
@@ -16,6 +17,10 @@ const Navbar = () => {
     setResourcesMenuOpen(!isResourcesMenuOpen);
   };
 
+  const toggleAboutMenu = () => {
+    setAboutMenuOpen(!isAboutMenuOpen);
+  };
+  
   return (
     <nav className="bg-[#dad7cd] py-4">
       <div className="container px-4 mx-auto">
@@ -24,7 +29,18 @@ const Navbar = () => {
             <Link to="/" className="text-lg font-bold text-[#344E41] tracking-wider uppercase">Bloom & Grow Community</Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link to="/about" className="text-[#344E41]">About</Link>
+            <div className="relative">
+              <button onClick={toggleAboutMenu} className="text-[#344E41] flex items-center">
+                <span>About</span>
+              </button>
+              {isAboutMenuOpen && (
+                <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
+                  <Link to="/about" className="block px-4 py-2 hover:bg-gray-100">About</Link>
+                  <Link to="/mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
+                  <Link to="/features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
+                </div>
+              )}
+            </div>
             {isAuthenticated && (
               <div className="relative">
                 <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
