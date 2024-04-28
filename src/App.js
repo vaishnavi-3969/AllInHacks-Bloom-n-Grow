@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Community, CommunityGardening, Contact, Forum, Home, Landing, Marketplace, Profile, VirtualWorkshops, Blog, Video, GardenPlanner, CropCalendar } from "./pages";
+import { About, Community, CommunityGardening, Contact,Blogs, Forum, Home, Landing, Marketplace, Profile, VirtualWorkshops, Blog, Video, GardenPlanner, CropCalendar } from "./pages";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Navbar, Footer } from "./components";
 import './App.css';
@@ -18,6 +18,7 @@ function App() {
     { path: '/forum', element: <Forum /> },
     { path: '/community-garden', element: <CommunityGardening />},
     { path: '/blog', element: <Blog />},
+    { path: '/blogs', element: <Blogs />},
     { path: '/video', element: <Video />},
     { path: '/garden-planner', element: <GardenPlanner />},
     { path: '/crop-calendar', element: <CropCalendar />}

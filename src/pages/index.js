@@ -13,11 +13,12 @@ import Blog from "./Blog";
 import Video from "./Video";
 import GardenPlanner from "./GardenPlanner";
 import CropCalendar from "./CropCalendar";
-
+import Blogs from './Blogs';
 
 export {
     Home,
     Landing,
+    Blogs,
     About,
     Resources,
     Profile,

@@ -65,7 +65,7 @@ const Navbar = ({ scrollToSection }) => {
               </button>
               {isResourcesMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-[#DAD7CD] rounded-md shadow-md">
-                  <Link to="/blog" className="block px-4 py-2 hover:bg-gray-100">Blog</Link>
+                  <Link to="/blogs" className="block px-4 py-2 hover:bg-gray-100">Blogs</Link>
                   <Link to="/video" className="block px-4 py-2 hover:bg-gray-100">Video</Link>
                   <Link to="/garden-planner" className="block px-4 py-2 hover:bg-gray-100">Garden Planner</Link>
                   <Link to="/crop-calendar" className="block px-4 py-2 hover:bg-gray-100">Crop Calendar</Link>
