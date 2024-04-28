@@ -18,7 +18,9 @@ const Navbar = () => {
               <FaShoppingCart className="text-lg" />
               <span>Marketplace</span>
             </Link>
-            <Link to="/community" className="text-white mr-4">Community</Link>
+            {isAuthenticated && (
+              <Link to="/community" className="text-white mr-4">Community</Link>
+            )}
             {isAuthenticated ? (
               <div className="flex items-center">
                 <span className="mr-4 text-white text-sm">Hi, {user.name}</span>
