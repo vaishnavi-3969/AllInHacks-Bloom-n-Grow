@@ -9,6 +9,10 @@ import Marketplace from "./Marketplace";
 import VirtualWorkshops from "./VirtualWorkshops";
 import Forum from "./Forum";
 import CommunityGardening from "./CommunityGardening";
+import Blog from "./Blog";
+import Video from "./Video";
+import GardenPlanner from "./GardenPlanner";
+import CropCalendar from "./CropCalendar";
 
 
 export {
@@ -22,5 +26,9 @@ export {
     Marketplace,
     VirtualWorkshops,
     Forum,
-    CommunityGardening
+    CommunityGardening,
+    Blog,
+    Video,
+    GardenPlanner,
+    CropCalendar
 }
