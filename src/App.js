@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Community, CommunityGardening, Contact, Forum, Home, Landing, Marketplace, Profile, VirtualWorkshops } from "./pages";
+import { About, Community, CommunityGardening, Contact, Forum, Home, Landing, Marketplace, Profile, VirtualWorkshops, Blog, Video, GardenPlanner, CropCalendar } from "./pages";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Navbar, Footer } from "./components";
 import './App.css';
@@ -16,7 +16,11 @@ function App() {
     { path: '/marketplace', element: <Marketplace /> },
     { path: '/virtual-workshops', element: <VirtualWorkshops /> },
     { path: '/forum', element: <Forum /> },
-    { path: '/community-garden', element: <CommunityGardening /> }
+    { path: '/community-garden', element: <CommunityGardening />},
+    { path: '/blog', element: <Blog />},
+    { path: '/video', element: <Video />},
+    { path: '/garden-planner', element: <GardenPlanner />},
+    { path: '/crop-calendar', element: <CropCalendar />}
   ]
 
   return (
@@ -24,18 +28,17 @@ function App() {
       <BrowserRouter>
         {isAuthenticated && <Navbar />}
         <Routes>
-        <Route path="*" element=<Landing/> exact/>
-          <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} exact />
+          <Route path="*" element={<Landing />} />
+          <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} />
           {routes.map((route, index) => (
             <Route
               key={index}
               path={route.path}
               element={route.element}
-              exact
             />
           ))}
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
