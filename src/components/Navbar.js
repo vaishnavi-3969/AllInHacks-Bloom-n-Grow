@@ -20,7 +20,7 @@ const Navbar = () => {
   const toggleAboutMenu = () => {
     setAboutMenuOpen(!isAboutMenuOpen);
   };
-  
+
   return (
     <nav className="bg-[#dad7cd] py-4">
       <div className="container px-4 mx-auto">
@@ -32,6 +32,7 @@ const Navbar = () => {
             <div className="relative">
               <button onClick={toggleAboutMenu} className="text-[#344E41] flex items-center">
                 <span>About</span>
+                <FaAngleDown className="text-lg ml-1" />
               </button>
               {isAboutMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
@@ -80,7 +81,7 @@ const Navbar = () => {
                 <button onClick={() => logout()} className="text-[#344E41] text-sm">Logout</button>
               </>
             ) : (
-              <button onClick={() => loginWithRedirect()} className="text-[#344E41] text-sm">Login</button>
+              <button onClick={() => loginWithRedirect()} className="text-[#344E41] text-lg">Login</button>
             )}
           </div>
         </div>
