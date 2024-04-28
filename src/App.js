@@ -16,7 +16,7 @@ function App() {
     { path: '/marketplace', element: <Marketplace /> },
     { path: '/virtual-workshops', element: <VirtualWorkshops /> },
     { path: '/forum', element: <Forum /> },
-    { path: '/community-garden', element: <CommunityGardening />}
+    { path: '/community-garden', element: <CommunityGardening /> }
   ]
 
   return (
@@ -24,6 +24,7 @@ function App() {
       <BrowserRouter>
         {isAuthenticated && <Navbar />}
         <Routes>
+        <Route path="*" element=<Landing/> exact/>
           <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} exact />
           {routes.map((route, index) => (
             <Route
