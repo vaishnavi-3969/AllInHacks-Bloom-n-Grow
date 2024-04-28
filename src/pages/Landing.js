@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
-import { RotatingFlowers } from '../assets/images';
+import { RotatingFlowers, flower1, flower10, flower11, flower12, flower13, flower2, flower3, flower4, flower5, flower6, flower7, flower8, flower9 } from '../assets/images';
 
 const Landing = ({ loginWithPopup }) => {
   return (
@@ -74,13 +74,27 @@ const Landing = ({ loginWithPopup }) => {
           </p>
         </div>
       </motion.div>
+      <div className='flex items-center justify-center text-center'>
+        <img src={flower1} alt='flower' className='w-[100px]'/>
+        <img src={flower2} alt='flower' className='w-[100px]'/>
+        <img src={flower3} alt='flower' className='w-[100px]'/>
+        <img src={flower4} alt='flower' className='w-[100px]'/>
+        <img src={flower5} alt='flower' className='w-[100px]'/>
+        <img src={flower6} alt='flower' className='w-[100px]'/>
+        <img src={flower7} alt='flower' className='w-[100px]'/>
+        <img src={flower8} alt='flower' className='w-[100px]'/>
+        <img src={flower9} alt='flower' className='w-[100px]'/>
+        <img src={flower10} alt='flower' className='w-[100px]'/>
+        <img src={flower11} alt='flower' className='w-[100px]'/>
+        <img src={flower13} alt='flower' className='w-[100px]'/>
+      </div>
       {/* About Section */}
       <motion.section
         id="about"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 2 }}
-        className="p-4 text-center bg-gray-100 text-[#344E41]"
+        className="p-4 text-center bg-[#DAD7CD] text-[#344E41]"
       >
         <h2 className="mb-4 text-3xl font-bold">About Bloom N Grow</h2>
         <p>
@@ -106,7 +120,7 @@ const Landing = ({ loginWithPopup }) => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 3 }}
-        className="p-4 text-center bg-gray-100 text-[#344E41]"
+        className="p-4 text-center bg-[#DAD7CD] text-[#344E41]"
       >
         <h2 className="mb-4 text-3xl font-bold">Our Features</h2>
         <ul className="list-disc list-inside">

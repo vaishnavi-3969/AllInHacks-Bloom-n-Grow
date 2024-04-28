@@ -35,7 +35,7 @@ const Navbar = () => {
                 <FaAngleDown className="ml-1 text-lg" />
               </button>
               {isAboutMenuOpen && (
-                <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
+                <div className="absolute py-2 mt-2 bg-[#DAD7CD] rounded-md shadow-md">
                   <Link to="#about" className="block px-4 py-2 hover:bg-gray-100">About</Link>
                   <Link to="#mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
                   <Link to="#features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                   <FaAngleDown className="ml-1 text-lg" />
                 </button>
                 {isCommunityMenuOpen && (
-                  <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
+                  <div className="absolute py-2 mt-2 bg-[#DAD7CD] rounded-md shadow-md">
                     <Link to="/forum" className="block px-4 py-2 hover:bg-gray-100">Forum</Link>
                     <Link to="/community-garden" className="block px-4 py-2 hover:bg-gray-100">Community Garden</Link>
                     <Link to="/virtual-workshops" className="block px-4 py-2 hover:bg-gray-100">Virtual Workshops</Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <FaAngleDown className="ml-1 text-lg" />
               </button>
               {isResourcesMenuOpen && (
-                <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
+                <div className="absolute py-2 mt-2 bg-[#DAD7CD] rounded-md shadow-md">
                   <Link to="/blog" className="block px-4 py-2 hover:bg-gray-100">Blog</Link>
                   <Link to="/video" className="block px-4 py-2 hover:bg-gray-100">Video</Link>
                   <Link to="/garden-planner" className="block px-4 py-2 hover:bg-gray-100">Garden Planner</Link>
