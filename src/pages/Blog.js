@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Footer from './Footer';
+import { Footer } from '../components';
 
 export const Blog = () => {
   // Sample blog posts data
@@ -54,7 +54,6 @@ export const Blog = () => {
 
   return (
     <>
-        <Header />
         <div className="blog-page">
             <h1 className="text-4xl mb-8">Blog</h1>
             <div className="blog-posts">
@@ -85,7 +84,6 @@ export const Blog = () => {
                 ))}
             </div>
         </div>
-        <Footer />
     </>
   );
 };
