@@ -59,7 +59,7 @@ import flower55 from './55.gif'
 import flower56 from './56.gif'
 import flower57 from './57.gif'
 import flower58 from './58.gif'
-
+import flower60 from './60.gif'
 
 
 
@@ -126,4 +126,5 @@ export {
     flower56,
     flower57,
     flower58,
+    flower60
 }

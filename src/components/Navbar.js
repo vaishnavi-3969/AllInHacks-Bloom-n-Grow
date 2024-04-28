@@ -39,6 +39,7 @@ const Navbar = ({ scrollToSection }) => {
                   <Link onClick={() => scrollToSection('#about')} className="block px-4 py-2 hover:bg-gray-100">About</Link>
                   <Link onClick={() => scrollToSection('#mission')} to="#mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
                   <Link onClick={() => scrollToSection('#features')} to="#features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
+                  <Link to="/team">Team</Link>
                 </div>
               )}
             </div>
