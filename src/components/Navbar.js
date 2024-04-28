@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#dad7cd] py-4 text-[#344E41]">
+    <nav className="bg-[#dad7cd] py-4 text-[#344E41] z-50"> {/* Added z-50 to ensure the navbar is above other elements */}
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -91,4 +91,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

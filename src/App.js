@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Community, Contact, Home, Landing, Marketplace, Profile } from "./pages";
+import { About, Community, Contact, Home, Landing, Marketplace, Profile, VirtualWorkshops } from "./pages";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Navbar } from "./components";
 import './App.css';
@@ -14,6 +14,7 @@ function App() {
     { path: '/community', element: <Community /> },
     { path: '/contact-us', element: <Contact /> },
     { path: '/marketplace', element: <Marketplace /> },
+    { path: '/virtual-workshops', element: <VirtualWorkshops /> }
   ]
 
   return (

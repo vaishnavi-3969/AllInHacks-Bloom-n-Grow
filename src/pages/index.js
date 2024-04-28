@@ -6,7 +6,7 @@ import Profile from "./Profile";
 import Contact from "./Contact";
 import Community from "./Community";
 import Marketplace from "./Marketplace";
-
+import VirtualWorkshops from "./VirtualWorkshops";
 
 
 
@@ -19,5 +19,6 @@ export {
     Profile,
     Contact,
     Community,
-    Marketplace
+    Marketplace,
+    VirtualWorkshops
 }
