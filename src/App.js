@@ -28,7 +28,7 @@ function App() {
       <BrowserRouter>
         {isAuthenticated && <Navbar />}
         <Routes>
-          <Route path="*" element={<Landing />} />
+          <Route path="*" element={isAuthenticated ? <Home /> : <Landing />} exact/>
           <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} />
           {routes.map((route, index) => (
             <Route
