@@ -54,7 +54,7 @@ export const Blog = () => {
   };
 
   return (
-    <>
+    <> 
         <div className="blog-page">
             <h1 className="text-4xl mb-8">Blog</h1>
             <div className="blog-posts">
