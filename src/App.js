@@ -16,11 +16,15 @@ function App() {
     { path: '/marketplace', element: <Marketplace /> },
     { path: '/virtual-workshops', element: <VirtualWorkshops /> },
     { path: '/forum', element: <Forum /> },
+<<<<<<< HEAD
     { path: '/community-garden', element: <CommunityGardening />},
     { path: '/blog', element: <Blog /> },
     { path: '/video', element: <Video /> },
     { path: '/garden-planner', element: <GardenPlanner /> },
     { path: '/crop-calendar', element: <CropCalendar /> }
+=======
+    { path: '/community-garden', element: <CommunityGardening /> }
+>>>>>>> fbc58a9cc287cad53450d1a327616949e5a9ed37
   ]
 
   return (
@@ -28,6 +32,7 @@ function App() {
       <BrowserRouter>
         {isAuthenticated && <Navbar />}
         <Routes>
+        <Route path="*" element=<Landing/> exact/>
           <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} exact />
           {routes.map((route, index) => (
             <Route

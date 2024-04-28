@@ -37,6 +37,29 @@ import flower33 from './33.gif'
 import flower34 from './34.gif'
 import flower35 from './35.gif'
 import flower36 from './36.gif'
+import flower37 from './37.gif'
+import flower38 from './38.gif'
+import flower39 from './39.gif'
+import flower40 from './40.gif'
+import flower41 from './41.gif'
+import flower42 from './42.gif'
+import flower43 from './43.gif'
+import flower44 from './44.gif'
+import flower45 from './45.gif'
+import flower46 from './46.gif'
+import flower47 from './47.gif'
+import flower48 from './48.gif'
+import flower49 from './49.gif'
+import flower50 from './50.gif'
+import flower51 from './51.gif'
+import flower52 from './52.gif'
+import flower53 from './53.gif'
+import flower54 from './54.gif'
+import flower55 from './55.gif'
+import flower56 from './56.gif'
+import flower57 from './57.gif'
+import flower58 from './58.gif'
+
 
 
 
@@ -80,5 +103,27 @@ export {
     flower33,
     flower34,
     flower35,
-    flower36
+    flower36,
+    flower37,
+    flower38,
+    flower39,
+    flower40,
+    flower41,
+    flower42,
+    flower43,
+    flower44,
+    flower45,
+    flower46,
+    flower47,
+    flower48,
+    flower49,
+    flower50,
+    flower51,
+    flower52,
+    flower53,
+    flower54,
+    flower55,
+    flower56,
+    flower57,
+    flower58,
 }

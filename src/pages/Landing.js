@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import { RotatingFlowers, flower1, flower10, flower11, flower12, flower13, flower2, flower3, flower4, flower5, flower6, flower7, flower8, flower9 } from '../assets/images';
 

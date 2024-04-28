@@ -77,7 +77,7 @@ const Navbar = ({ scrollToSection }) => {
             </Link>
             {isAuthenticated ? (
               <>
-              <Link to="/profile"><span className="text-[#344E41] text-sm">Hi, {user.name}</span></Link>
+              <Link to="/profile" className='flex items-center justify-center bold'><img src={user.picture} className="rounded-[80px] w-[40px] justify-center p-1" alt=''/><span className="text-[#344E41] text-sm ">Hi, {user.name}</span></Link>
                 <button onClick={() => logout()} className="text-[#344E41] text-sm">Logout</button>
               </>
             ) : (
