@@ -114,7 +114,7 @@ const Forum = () => {
             {isAuthenticated && (
                 <div className="py-3 mb-4">
                     <textarea
-                        className="w-full p-2 border border-gray-300 rounded-md bg-[#A3B18A] text-black"
+                        className="w-full p-2 border border-gray-300 rounded-md bg-[#DAD7CD] text-black"
                         value={newPostContent}
                         onChange={(e) => setNewPostContent(e.target.value)}
                         placeholder="What's on your mind?"

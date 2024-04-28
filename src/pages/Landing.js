@@ -74,19 +74,20 @@ const Landing = ({ loginWithPopup }) => {
           </p>
         </div>
       </motion.div>
-      <div className='flex items-center justify-center text-center'>
-        <img src={flower1} alt='flower' className='w-[100px]'/>
-        <img src={flower2} alt='flower' className='w-[100px]'/>
-        <img src={flower3} alt='flower' className='w-[100px]'/>
-        <img src={flower4} alt='flower' className='w-[100px]'/>
-        <img src={flower5} alt='flower' className='w-[100px]'/>
-        <img src={flower6} alt='flower' className='w-[100px]'/>
-        <img src={flower7} alt='flower' className='w-[100px]'/>
-        <img src={flower8} alt='flower' className='w-[100px]'/>
-        <img src={flower9} alt='flower' className='w-[100px]'/>
-        <img src={flower10} alt='flower' className='w-[100px]'/>
-        <img src={flower11} alt='flower' className='w-[100px]'/>
-        <img src={flower13} alt='flower' className='w-[100px]'/>
+      <div className='flex items-center justify-center overflow-hidden text-center'>
+        <img src={flower1} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower2} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower3} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower4} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower5} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower6} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower7} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower8} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower9} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower10} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower11} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower12} alt='flower' className='w-[100px] h-auto' />
+        <img src={flower13} alt='flower' className='w-[100px] h-auto' />
       </div>
       {/* About Section */}
       <motion.section
@@ -132,7 +133,6 @@ const Landing = ({ loginWithPopup }) => {
           <li>Marketplace: Buy and sell gardening supplies.</li>
         </ul>
       </motion.section>
-      {/* <Footer /> */}
     </div>
   );
 };
