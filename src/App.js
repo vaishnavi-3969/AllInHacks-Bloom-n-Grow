@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { About, Community, Contact, Forum, Home, Landing, Marketplace, Profile, VirtualWorkshops } from "./pages";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 import './App.css';
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
             />
           ))}
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

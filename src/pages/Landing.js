@@ -132,7 +132,7 @@ const Landing = ({ loginWithPopup }) => {
           <li>Marketplace: Buy and sell gardening supplies.</li>
         </ul>
       </motion.section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
