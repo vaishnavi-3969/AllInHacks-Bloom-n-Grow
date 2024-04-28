@@ -7,7 +7,7 @@ const Home = () => {
   const { isAuthenticated } = useAuth0();
 
   return (
-    <div className="container px-4 py-8 mx-auto">
+    <div className="container min-h-screen px-4 py-8 mx-auto">
       <div className="mb-8 text-center">
         <h1 className="mb-4 text-4xl font-bold md:text-6xl">Welcome to Bloom & Grow Community</h1>
         <p className="text-lg md:text-xl">

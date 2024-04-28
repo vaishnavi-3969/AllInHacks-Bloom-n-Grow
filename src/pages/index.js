@@ -8,7 +8,7 @@ import Community from "./Community";
 import Marketplace from "./Marketplace";
 import VirtualWorkshops from "./VirtualWorkshops";
 import Forum from "./Forum";
-
+import CommunityGardening from "./CommunityGardening";
 
 
 export {
@@ -21,5 +21,6 @@ export {
     Community,
     Marketplace,
     VirtualWorkshops,
-    Forum
+    Forum,
+    CommunityGardening
 }
