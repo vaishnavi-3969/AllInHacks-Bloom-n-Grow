@@ -15,7 +15,7 @@ const Landing = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="bg-[#344E41] min-h-screen text-white flex flex-col justify-center items-center"
+        className="bg-[#ffffff] min-h-screen text-black flex flex-col justify-center items-center"
       >
         <div className="max-w-3xl text-center justify-center">
          <div className='flex items-center'>
