@@ -62,6 +62,32 @@ const Landing = () => {
           </p>
         </div>
       </motion.div>
+      {/* About Section */}
+            <section id="about" className="text-center p-4">
+        <h2 className="text-3xl font-bold mb-4">About Bloom N Grow</h2>
+        <p>
+          "Bloom N Grow" is an innovative gardening platform that aims to empower communities in Africa to maintain and nurture their gardens, promoting sustainability and environmental well-being.
+        </p>
+      </section>
+      {/* Mission Section */}
+      <section id="mission" className="text-center p-4 bg-gray-100">
+        <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+        <p>
+          Our mission is to provide accessible and comprehensive gardening resources, enabling individuals and communities to cultivate thriving gardens, fostering a greener and healthier environment while promoting food security and self-sufficiency.
+        </p>
+      </section>
+      {/* Features Section */}
+      <section id="features" className="text-center p-4">
+        <h2 className="text-3xl font-bold mb-4">Our Features</h2>
+        <ul className="list-disc list-inside">
+          <li>User Profile: Personalize your experience and interact with the community.</li>
+          <li>Garden Planner: Plan and manage your garden with ease.</li>
+          <li>Community Forum: Engage with fellow gardening enthusiasts.</li>
+          <li>Crops Calendar: Keep track of planting and harvesting times.</li>
+          <li>Community Gardens: Participate in community gardening events.</li>
+          <li>Marketplace: Buy and sell gardening supplies.</li>
+        </ul>
+      </section>
       <Footer />
     </div>
   );

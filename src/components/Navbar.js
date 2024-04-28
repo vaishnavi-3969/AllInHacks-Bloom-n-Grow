@@ -36,9 +36,9 @@ const Navbar = () => {
               </button>
               {isAboutMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
-                  <Link to="/about" className="block px-4 py-2 hover:bg-gray-100">About</Link>
-                  <Link to="/mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
-                  <Link to="/features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
+                  <Link to="#about" className="block px-4 py-2 hover:bg-gray-100">About</Link>
+                  <Link to="#mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
+                  <Link to="#features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
                 </div>
               )}
             </div>
