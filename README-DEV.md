@@ -6,8 +6,8 @@ Welcome to the developer documentation for “Bloom N Grow” - an all-in-one ga
 
 ## Prerequisites
 - Git
-- Node.js (version X.X.X or higher)
-- npm (version X.X.X or higher)
+- Node.js (version v18.17.1 or higher)
+- npm (version 9.6.7 or higher)
 
 ## Setup
 1. Fork and clone the repository:
@@ -23,20 +23,24 @@ Welcome to the developer documentation for “Bloom N Grow” - an all-in-one ga
 The project has the following structure:
 ```
     bloom-n-grow/
-    ├── node_modules/
     ├── public/
     ├── src/
+    │   ├── assets/
     │   ├── components/
     │   ├── pages/
-    │   ├── utils/
     │   ├── App.js
     │   ├── index.js
     │   └── ...
     ├── .gitignore
-    ├── package.json
+    ├── contributing.md
+    ├── license.md
     ├── package-lock.json
-    └── README.md (Developer Documentation)
-    └── README-USER.md (User Documentation)
+    ├── package.json
+    ├── postcss.config
+    ├── README-DEV.md (Documentation Hub)
+    ├── README-USER.md (User Documentation)
+    ├── README.md (Documentation Hub)
+    └── tailwind.config.js
 ```
 ## Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
