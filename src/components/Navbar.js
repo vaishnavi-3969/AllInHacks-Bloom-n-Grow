@@ -24,27 +24,26 @@ const Navbar = () => {
             <Link to="/" className="text-lg font-bold text-[#344E41] tracking-wider uppercase">Bloom & Grow Community</Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link to="/marketplace" className="text-[#344E41] flex items-center justify-center space-x-1">
-              <FaShoppingCart className="text-lg" />
-              <span>Marketplace</span>
-            </Link>
-            <div className="relative">
-              <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
-                <span className="mr-1">Community</span>
-                <FaAngleDown className="text-lg" />
-              </button>
-              {isCommunityMenuOpen && (
-                <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
-                  <Link to="/forum" className="block px-4 py-2 hover:bg-gray-100">Forum</Link>
-                  <Link to="/community-garden" className="block px-4 py-2 hover:bg-gray-100">Community Garden</Link>
-                  <Link to="/virtual-workshops" className="block px-4 py-2 hover:bg-gray-100">Virtual Workshops</Link>
-                </div>
-              )}
-            </div>
+            <Link to="/about" className="text-[#344E41]">About</Link>
+            {isAuthenticated && (
+              <div className="relative">
+                <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
+                  <span>Community</span>
+                  <FaAngleDown className="text-lg ml-1" />
+                </button>
+                {isCommunityMenuOpen && (
+                  <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
+                    <Link to="/forum" className="block px-4 py-2 hover:bg-gray-100">Forum</Link>
+                    <Link to="/community-garden" className="block px-4 py-2 hover:bg-gray-100">Community Garden</Link>
+                    <Link to="/virtual-workshops" className="block px-4 py-2 hover:bg-gray-100">Virtual Workshops</Link>
+                  </div>
+                )}
+              </div>
+            )}
             <div className="relative">
               <button onClick={toggleResourcesMenu} className="text-[#344E41] flex items-center">
-                <span className="mr-1">Resources</span>
-                <FaAngleDown className="text-lg" />
+                <span>Resources</span>
+                <FaAngleDown className="text-lg ml-1" />
               </button>
               {isResourcesMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
@@ -55,14 +54,17 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link to={isAuthenticated ? "/profile" : "/"} className="text-[#344E41] flex items-center">
-              <FaUserCircle className="text-lg" />
-              <span>{isAuthenticated ? user.name : "Login"}</span>
+            <Link to="/marketplace" className="text-[#344E41] flex items-center">
+              <FaShoppingCart className="text-lg" />
+              <span>Marketplace</span>
             </Link>
             {isAuthenticated ? (
-              <button onClick={() => logout()} className="text-[#344E41]">Logout</button>
+              <>
+                <span className="text-[#344E41] text-sm">Hi, {user.name}</span>
+                <button onClick={() => logout()} className="text-[#344E41] text-sm">Logout</button>
+              </>
             ) : (
-              <button onClick={() => loginWithRedirect()} className="text-[#344E41]">Login</button>
+              <button onClick={() => loginWithRedirect()} className="text-[#344E41] text-sm">Login</button>
             )}
           </div>
         </div>
