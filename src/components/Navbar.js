@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="relative">
               <button onClick={toggleAboutMenu} className="text-[#344E41] flex items-center">
                 <span>About</span>
-                <FaAngleDown className="text-lg ml-1" />
+                <FaAngleDown className="ml-1 text-lg" />
               </button>
               {isAboutMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
@@ -46,7 +46,7 @@ const Navbar = () => {
               <div className="relative">
                 <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
                   <span>Community</span>
-                  <FaAngleDown className="text-lg ml-1" />
+                  <FaAngleDown className="ml-1 text-lg" />
                 </button>
                 {isCommunityMenuOpen && (
                   <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="relative">
               <button onClick={toggleResourcesMenu} className="text-[#344E41] flex items-center">
                 <span>Resources</span>
-                <FaAngleDown className="text-lg ml-1" />
+                <FaAngleDown className="ml-1 text-lg" />
               </button>
               {isResourcesMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
@@ -77,7 +77,7 @@ const Navbar = () => {
             </Link>
             {isAuthenticated ? (
               <>
-                <span className="text-[#344E41] text-sm">Hi, {user.name}</span>
+              <Link to="/profile"><span className="text-[#344E41] text-sm">Hi, {user.name}</span></Link>
                 <button onClick={() => logout()} className="text-[#344E41] text-sm">Logout</button>
               </>
             ) : (

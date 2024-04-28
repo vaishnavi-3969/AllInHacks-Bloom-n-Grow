@@ -15,18 +15,18 @@ const Landing = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="bg-[#ffffff] min-h-screen text-black flex flex-col justify-center items-center"
+        className="bg-[#344E41] text-white min-h-screen flex flex-col justify-center items-center"
       >
-        <div className="max-w-3xl text-center justify-center">
+        <div className="justify-center max-w-3xl text-center">
          <div className='flex items-center'>
-         <h1 className="text-4xl md:text-6xl font-bold mb-4">
+         <h1 className="mb-4 text-4xl font-bold md:text-6xl">
             Welcome to Bloom & Grow Community
           </h1>
           <div className="w-[330px] flex justify-center mb-8">
-            <img src={RotatingFlowers} alt="Rotating flowers" className="max-w-full h-auto" />
+            <img src={RotatingFlowers} alt="Rotating flowers" className="h-auto max-w-full" />
           </div>
          </div>
-          <p className="text-lg md:text-xl mb-8">
+          <p className="mb-8 text-lg md:text-xl">
             Join our vibrant community of plant lovers, where you can connect, learn, and grow together.
           </p>
           <div className="flex justify-center mb-12">
@@ -38,7 +38,7 @@ const Landing = () => {
             </button>
             <button
               onClick={() => loginWithPopup()}
-              className="bg-transparent border-2 border-white hover:border-green-500 text-lg md:text-xl font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+              className="px-6 py-2 text-lg font-bold transition duration-300 ease-in-out transform bg-transparent border-2 border-white rounded-full hover:border-green-500 md:text-xl hover:scale-105"
             >
               Log In
             </button>
@@ -63,22 +63,22 @@ const Landing = () => {
         </div>
       </motion.div>
       {/* About Section */}
-            <section id="about" className="text-center p-4">
-        <h2 className="text-3xl font-bold mb-4">About Bloom N Grow</h2>
+            <section id="about" className="p-4 text-center">
+        <h2 className="mb-4 text-3xl font-bold">About Bloom N Grow</h2>
         <p>
           "Bloom N Grow" is an innovative gardening platform that aims to empower communities in Africa to maintain and nurture their gardens, promoting sustainability and environmental well-being.
         </p>
       </section>
       {/* Mission Section */}
-      <section id="mission" className="text-center p-4 bg-gray-100">
-        <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+      <section id="mission" className="p-4 text-center bg-gray-100">
+        <h2 className="mb-4 text-3xl font-bold">Our Mission</h2>
         <p>
           Our mission is to provide accessible and comprehensive gardening resources, enabling individuals and communities to cultivate thriving gardens, fostering a greener and healthier environment while promoting food security and self-sufficiency.
         </p>
       </section>
       {/* Features Section */}
-      <section id="features" className="text-center p-4">
-        <h2 className="text-3xl font-bold mb-4">Our Features</h2>
+      <section id="features" className="p-4 text-center">
+        <h2 className="mb-4 text-3xl font-bold">Our Features</h2>
         <ul className="list-disc list-inside">
           <li>User Profile: Personalize your experience and interact with the community.</li>
           <li>Garden Planner: Plan and manage your garden with ease.</li>
