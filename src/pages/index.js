@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import Community from "./Community";
 import Marketplace from "./Marketplace";
 import VirtualWorkshops from "./VirtualWorkshops";
-
+import Forum from "./Forum";
 
 
 
@@ -20,5 +20,6 @@ export {
     Contact,
     Community,
     Marketplace,
-    VirtualWorkshops
+    VirtualWorkshops,
+    Forum
 }
