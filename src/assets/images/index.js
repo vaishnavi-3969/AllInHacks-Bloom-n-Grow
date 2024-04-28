@@ -60,12 +60,27 @@ import flower56 from './56.gif'
 import flower57 from './57.gif'
 import flower58 from './58.gif'
 import flower60 from './60.gif'
-
-
-
+import bags from './bags.gif'
+import earings from './earings.gif'
+import totebag from './totebag.gif'
+import straw from './straw.gif'
+import cutlery from './cutlery.gif'
+import coffee from './coffee.gif'
+import phoneCase from './phoneCase.gif'
+import notebook from './notebook.gif'
+import light from './light.gif'
 
 export {
     HandingFlowers,
+    light,
+    cutlery,
+    coffee,
+    phoneCase,
+    notebook,
+    totebag,
+    straw,
+    bags,
+    earings,
     RotatingFlowers,
     MulipleHandingFlowers,
     flower1,
