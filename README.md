@@ -2,6 +2,11 @@
 
 Welcome to the Bloom N Grow documentation hub. Below you will find links to various guides tailored for different audiences.
 
+<p align="center">
+  <img src="https://github.com/vaishnavi-3969/AllInHacks-Bloom-n-Grow/blob/master/public/bloomngrow-logo.png?raw=true
+" alt="alt text">
+</p>
+
 ## Documentation for Different Audiences
 
 - [**Developer Guide**](./README-DEV.md): Detailed instructions for developers who want to contribute to the project.
