@@ -5,9 +5,16 @@ import { motion } from 'framer-motion';
 import { RotatingFlowers, flower1, flower10, flower11, flower12, flower13, flower2, flower3, flower4, flower5, flower6, flower7, flower8, flower9 } from '../assets/images';
 
 const Landing = ({ loginWithPopup }) => {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <div>
-      <Navbar />
+      <Navbar scrollToSection={scrollToSection} />
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
