@@ -7,6 +7,7 @@ const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
   const [isCommunityMenuOpen, setCommunityMenuOpen] = useState(false);
   const [isResourcesMenuOpen, setResourcesMenuOpen] = useState(false);
+  const [isAboutMenuOpen, setAboutMenuOpen] = useState(false);
 
   const toggleCommunityMenu = () => {
     setCommunityMenuOpen(!isCommunityMenuOpen);
@@ -14,6 +15,10 @@ const Navbar = () => {
 
   const toggleResourcesMenu = () => {
     setResourcesMenuOpen(!isResourcesMenuOpen);
+  };
+
+  const toggleAboutMenu = () => {
+    setAboutMenuOpen(!isAboutMenuOpen);
   };
 
   return (
@@ -24,27 +29,38 @@ const Navbar = () => {
             <Link to="/" className="text-lg font-bold text-[#344E41] tracking-wider uppercase">Bloom & Grow Community</Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link to="/marketplace" className="text-[#344E41] flex items-center justify-center space-x-1">
-              <FaShoppingCart className="text-lg" />
-              <span>Marketplace</span>
-            </Link>
             <div className="relative">
-              <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
-                <span className="mr-1">Community</span>
-                <FaAngleDown className="text-lg" />
+              <button onClick={toggleAboutMenu} className="text-[#344E41] flex items-center">
+                <span>About</span>
+                <FaAngleDown className="text-lg ml-1" />
               </button>
-              {isCommunityMenuOpen && (
+              {isAboutMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
-                  <Link to="/forum" className="block px-4 py-2 hover:bg-gray-100">Forum</Link>
-                  <Link to="/community-garden" className="block px-4 py-2 hover:bg-gray-100">Community Garden</Link>
-                  <Link to="/virtual-workshops" className="block px-4 py-2 hover:bg-gray-100">Virtual Workshops</Link>
+                  <Link to="#about" className="block px-4 py-2 hover:bg-gray-100">About</Link>
+                  <Link to="#mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
+                  <Link to="#features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
                 </div>
               )}
             </div>
+            {isAuthenticated && (
+              <div className="relative">
+                <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
+                  <span>Community</span>
+                  <FaAngleDown className="text-lg ml-1" />
+                </button>
+                {isCommunityMenuOpen && (
+                  <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
+                    <Link to="/forum" className="block px-4 py-2 hover:bg-gray-100">Forum</Link>
+                    <Link to="/community-garden" className="block px-4 py-2 hover:bg-gray-100">Community Garden</Link>
+                    <Link to="/virtual-workshops" className="block px-4 py-2 hover:bg-gray-100">Virtual Workshops</Link>
+                  </div>
+                )}
+              </div>
+            )}
             <div className="relative">
               <button onClick={toggleResourcesMenu} className="text-[#344E41] flex items-center">
-                <span className="mr-1">Resources</span>
-                <FaAngleDown className="text-lg" />
+                <span>Resources</span>
+                <FaAngleDown className="text-lg ml-1" />
               </button>
               {isResourcesMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">
@@ -55,14 +71,17 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link to={isAuthenticated ? "/profile" : "/"} className="text-[#344E41] flex items-center">
-              <FaUserCircle className="text-lg" />
-              <span>{isAuthenticated ? user.name : "Login"}</span>
+            <Link to="/marketplace" className="text-[#344E41] flex items-center">
+              <FaShoppingCart className="text-lg" />
+              <span>Marketplace</span>
             </Link>
             {isAuthenticated ? (
-              <button onClick={() => logout()} className="text-[#344E41]">Logout</button>
+              <>
+                <span className="text-[#344E41] text-sm">Hi, {user.name}</span>
+                <button onClick={() => logout()} className="text-[#344E41] text-sm">Logout</button>
+              </>
             ) : (
-              <button onClick={() => loginWithRedirect()} className="text-[#344E41]">Login</button>
+              <button onClick={() => loginWithRedirect()} className="text-[#344E41] text-lg">Login</button>
             )}
           </div>
         </div>
@@ -72,3 +91,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
