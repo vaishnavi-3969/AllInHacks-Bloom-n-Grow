@@ -16,15 +16,7 @@ function App() {
     { path: '/marketplace', element: <Marketplace /> },
     { path: '/virtual-workshops', element: <VirtualWorkshops /> },
     { path: '/forum', element: <Forum /> },
-<<<<<<< HEAD
-    { path: '/community-garden', element: <CommunityGardening />},
-    { path: '/blog', element: <Blog /> },
-    { path: '/video', element: <Video /> },
-    { path: '/garden-planner', element: <GardenPlanner /> },
-    { path: '/crop-calendar', element: <CropCalendar /> }
-=======
-    { path: '/community-garden', element: <CommunityGardening /> }
->>>>>>> fbc58a9cc287cad53450d1a327616949e5a9ed37
+    { path: '/community-garden', element: <CommunityGardening />}
   ]
 
   return (
