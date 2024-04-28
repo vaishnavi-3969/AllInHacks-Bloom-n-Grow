@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart, FaUserCircle, FaAngleDown } from 'react-icons/fa'; 
 import { useAuth0 } from '@auth0/auth0-react';
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
   const [isCommunityMenuOpen, setCommunityMenuOpen] = useState(false);
   const [isResourcesMenuOpen, setResourcesMenuOpen] = useState(false);
@@ -36,9 +36,9 @@ const Navbar = () => {
               </button>
               {isAboutMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-[#DAD7CD] rounded-md shadow-md">
-                  <Link to="#about" className="block px-4 py-2 hover:bg-gray-100">About</Link>
-                  <Link to="#mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
-                  <Link to="#features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
+                  <Link onClick={() => scrollToSection('#about')} className="block px-4 py-2 hover:bg-gray-100">About</Link>
+                  <Link onClick={() => scrollToSection('#mission')} to="#mission" className="block px-4 py-2 hover:bg-gray-100">Mission</Link>
+                  <Link onClick={() => scrollToSection('#features')} to="#features" className="block px-4 py-2 hover:bg-gray-100">Features</Link>
                 </div>
               )}
             </div>
