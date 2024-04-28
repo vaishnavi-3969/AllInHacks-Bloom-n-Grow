@@ -42,6 +42,10 @@ The project has the following structure:
     ├── README.md (Documentation Hub)
     └── tailwind.config.js
 ```
+
+## Tech Stack
+<img src="https://skillicons.dev/icons?i=react,js,tailwind,git,github,js,vercel" />
+
 ## Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
