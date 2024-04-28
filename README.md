@@ -14,3 +14,6 @@ Welcome to the Bloom N Grow documentation hub. Below you will find links to vari
 - [**React App Guide**](./README-REACT.md): The default React app README for those interested in React-specific details.
 
 Please select the guide that best suits your needs.
+
+## Tech Stack
+<img src="https://skillicons.dev/icons?i=react,js,tailwind,git,github,js,vercel" />
