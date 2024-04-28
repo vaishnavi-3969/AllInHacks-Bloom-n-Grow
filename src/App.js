@@ -17,7 +17,7 @@ function App() {
   ]
 
   return (
-    <div>
+    <div className="bg-[#344E41] text-white min-h-screen">
       <BrowserRouter>
         {isAuthenticated && <Navbar />}
         <Routes>
