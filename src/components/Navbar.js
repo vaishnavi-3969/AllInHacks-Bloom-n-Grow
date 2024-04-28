@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart, FaUserCircle } from 'react-icons/fa'; 
+import { FaShoppingCart, FaUserCircle, FaBlog, FaVideo, FaSeedling } from 'react-icons/fa';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const Navbar = () => {
@@ -14,13 +14,17 @@ const Navbar = () => {
             <Link to="/" className="text-lg font-bold text-white tracking-wider uppercase">Bloom & Grow Community</Link>
           </div>
           <div className="flex items-center">
-            <Link to="/marketplace" className="text-white flex items-center justify-center space-x-1 mr-4">
-              <FaShoppingCart className="text-lg" />
-              <span>Marketplace</span>
+            <Link to="/About" className="text-white flex items-center justify-center space-x-1 mr-4">About
             </Link>
             {isAuthenticated && (
               <Link to="/community" className="text-white mr-4">Community</Link>
             )}
+            <Link to="/Resources" className="text-white flex items-center justify-center space-x-1 mr-4">Resources
+            </Link>
+            <Link to="/marketplace" className="text-white flex items-center justify-center space-x-1 mr-4">
+              <FaShoppingCart className="text-lg" />
+              <span>Marketplace</span>
+            </Link>
             {isAuthenticated ? (
               <div className="flex items-center">
                 <span className="mr-4 text-white text-sm">Hi, {user.name}</span>
