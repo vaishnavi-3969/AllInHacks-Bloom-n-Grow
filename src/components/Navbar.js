@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
+import { FaShoppingCart, FaUserCircle, FaBlog, FaVideo, FaSeedling } from 'react-icons/fa';
+=======
 import { FaShoppingCart, FaUserCircle, FaAngleDown } from 'react-icons/fa'; 
+>>>>>>> e3d1c4c23cf89a9c96c5665ec03251ca82b1196d
 import { useAuth0 } from '@auth0/auth0-react';
 
 const Navbar = () => {
@@ -23,6 +27,30 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="text-lg font-bold text-[#344E41] tracking-wider uppercase">Bloom & Grow Community</Link>
           </div>
+<<<<<<< HEAD
+          <div className="flex items-center">
+            <Link to="/About" className="text-white flex items-center justify-center space-x-1 mr-4">About
+            </Link>
+            {isAuthenticated && (
+              <Link to="/community" className="text-white mr-4">Community</Link>
+            )}
+            <Link to="/Resources" className="text-white flex items-center justify-center space-x-1 mr-4">Resources
+            </Link>
+            <Link to="/marketplace" className="text-white flex items-center justify-center space-x-1 mr-4">
+              <FaShoppingCart className="text-lg" />
+              <span>Marketplace</span>
+            </Link>
+            {isAuthenticated ? (
+              <div className="flex items-center">
+                <span className="mr-4 text-white text-sm">Hi, {user.name}</span>
+                <button onClick={() => logout()} className="text-white text-sm flex items-center">
+                  <FaUserCircle className="mr-1 text-lg" /> Logout
+                </button>
+              </div>
+            ) : (
+              <button onClick={() => loginWithRedirect()} className="text-white text-sm flex items-center">
+                <FaUserCircle className="mr-1 text-lg" /> Login
+=======
           <div className="flex items-center space-x-4">
             <Link to="/marketplace" className="text-[#344E41] flex items-center justify-center space-x-1">
               <FaShoppingCart className="text-lg" />
@@ -32,6 +60,7 @@ const Navbar = () => {
               <button onClick={toggleCommunityMenu} className="text-[#344E41] flex items-center">
                 <span className="mr-1">Community</span>
                 <FaAngleDown className="text-lg" />
+>>>>>>> e3d1c4c23cf89a9c96c5665ec03251ca82b1196d
               </button>
               {isCommunityMenuOpen && (
                 <div className="absolute py-2 mt-2 bg-white rounded-md shadow-md">

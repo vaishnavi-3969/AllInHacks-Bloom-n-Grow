@@ -1,5 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import { RotatingFlowers } from '../assets/images';
 
@@ -8,6 +10,7 @@ const Landing = () => {
 
   return (
     <div>
+      <Navbar />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -59,6 +62,7 @@ const Landing = () => {
           </p>
         </div>
       </motion.div>
+      <Footer />
     </div>
   );
 };
